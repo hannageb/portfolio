@@ -1,74 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
-
-
-
-/** mobile */
-@media only screen and (max-width: 600px){
-  body{
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 20px 0px;
-
+    
     /*repeating background*/
-    background-image: url('/public/lotus.png');
+    background-image: url('./assets/tulip.svg');
+    background-blend-mode:hard-light;
     background-color: #EADEDA;
-    width: 100%;
-    height: 100%;
     background-size: 60px 60px;
     background-repeat: repeat;
-  }
-
-  .card{
-      background-color: #5D526F;
-      width: 300px;
-      height: 550px;
-      border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .text{
-      font-family: "Jersey 25", sans-serif;
-      color: #FFFFFF;
-      position: relative;
-  }
 }
 
-/** desktop */
-@media only screen and (min-width: 600px){
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 120px 0;
-  
-    /*repeating background*/
-    background-image: url('/public/lotus.png');
-    background-color: #EADEDA;
-    width: 100%;
-    height: 100%;
-    background-size: 60px 60px;
-    background-repeat: repeat;
-  }
-  .card{
-    background-color: #5D526F;
-    width: 770px;
-    height: 400px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .text{
-    font-family: "Jersey 25", sans-serif;
-    color: #FFFFFF;
-  }
-  .pic{
-    width: 200px;
-    height: 275px;
-  }
+p {
+  padding: 2%;
+  font-family: "Jersey 25", sans-serif;
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card {
+  height:fit-content;
+  align-self: center;
+  justify-content: center;
+  width: auto/12;
+  margin: 7%;
+  background-color: #5D526F;
+  border-radius: 50px;
+}
+
+.card-contents{
+  display: flex;
+  align-items: center;
+}
+
+.pic img{
+  width: 50%;
+  padding-left: 3%;
+}
+
+.pic p, .pic .links{
+  line-height: 5px;
+  justify-items: start;
+  padding-left: 3%;
+}
+
+.links li{
+  list-style: none;
+  width: 5%;
+  display: inline-block;
+}
+
+.toggle{
+  display: inline-block;
+  list-style: none;
+  align-content: center;
+  width: 100%;
+}
+
+.abt, .edu, .misc {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.star {
+  width: 30px;  
+  height: 30px;
+  background: #88caa7;
+  aspect-ratio: 1;
+  margin: 5%;
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+}
+
+.star:hover{
+  background: rgb(71, 100, 71);
 }
