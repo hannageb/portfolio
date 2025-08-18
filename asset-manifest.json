@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a12ddfd4.css",
-    "main.js": "/portfolio/static/js/main.d3e337f2.js",
+    "main.css": "/portfolio/static/css/main.8b13f6d5.css",
+    "main.js": "/portfolio/static/js/main.1e632aeb.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
     "static/media/pic.jpg": "/portfolio/static/media/pic.e543679242890fd4f9c9.jpg",
-    "static/media/tulip.svg": "/portfolio/static/media/tulip.98accac775dedcd3d6c2.svg",
-    "static/media/github.webp": "/portfolio/static/media/github.ab4abbf52dde630aeb6f.webp",
+    "static/media/tulip-pattern.png": "/portfolio/static/media/tulip-pattern.9d1de4cc7d1235d3decc.png",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.4d89447feb12417a1b34.png",
+    "static/media/github.png": "/portfolio/static/media/github.2ceeb4d1e7f9c958adb5.png",
     "index.html": "/portfolio/index.html",
-    "main.a12ddfd4.css.map": "/portfolio/static/css/main.a12ddfd4.css.map",
-    "main.d3e337f2.js.map": "/portfolio/static/js/main.d3e337f2.js.map",
+    "main.8b13f6d5.css.map": "/portfolio/static/css/main.8b13f6d5.css.map",
+    "main.1e632aeb.js.map": "/portfolio/static/js/main.1e632aeb.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a12ddfd4.css",
-    "static/js/main.d3e337f2.js"
+    "static/css/main.8b13f6d5.css",
+    "static/js/main.1e632aeb.js"
   ]
 }
