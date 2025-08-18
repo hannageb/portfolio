@@ -3,14 +3,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    
-    /*repeating background*/
-    background-image: url('./assets/tulip.svg');
-    background-blend-mode:hard-light;
-    background-color: #EADEDA;
-    background-size: 60px 60px;
-    background-repeat: repeat;
+    margin: auto;
+
+    background-image: url('./assets/tulip-pattern.png');
+    background-color: #EFE4F9;
 }
 
 p {
@@ -18,63 +14,92 @@ p {
   font-family: "Jersey 25", sans-serif;
   color: #FFFFFF;
   font-size: 30px;
-  text-align: center;
 }
 
 .card {
-  height:fit-content;
-  align-self: center;
-  justify-content: center;
-  width: auto/12;
-  margin: 7%;
+  display: inline-block;
+  margin: 20px auto;
+  width: 775px;
+  height: auto;
+  padding: 20px;
   background-color: #5D526F;
   border-radius: 50px;
+  flex-direction: column;
 }
 
 .card-contents{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
 }
 
-.pic img{
-  width: 50%;
-  padding-left: 3%;
+.pic{
+  padding-left: 10%;
+}
+
+.profile-pic{
+  object-fit: cover;
+  width: 200px;
+  height: 275px;
+  border-radius: 10%;
 }
 
 .pic p, .pic .links{
   line-height: 5px;
   justify-items: start;
-  padding-left: 3%;
 }
 
 .links li{
   list-style: none;
-  width: 5%;
-  display: inline-block;
+  
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+.links img {
+  width: 30px;
 }
 
 .toggle{
-  display: inline-block;
-  list-style: none;
-  align-content: center;
+  object-fit: cover;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.abt, .edu, .misc {
-  display: inline-flex;
-  flex-direction: row;
+.section {
+  padding-right: 10%;
+  margin-top: 10px;
+  display: flex;
   align-items: center;
 }
 
+.section-text{
+  width: 100%;
+  text-align: left;
+  line-height: 30px;
+  margin: auto 10px;
+}
+
+/** star is from https://css-shape.com/star/ */
 .star {
   width: 30px;  
   height: 30px;
-  background: #88caa7;
+  background: #EFE4F9;
   aspect-ratio: 1;
   margin: 5%;
   clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+  cursor: pointer;
 }
 
 .star:hover{
-  background: rgb(71, 100, 71);
+  background: #c2b5ce;
 }
+
