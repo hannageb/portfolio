@@ -7,70 +7,108 @@ import { useState } from 'react';
 
 function App() {
   /** this toggles the text for each section
-   * the parameter would be "about", "edu", or "misc"
+   * there are three separate states so that each text only shows at one time
    **/
-  const [showAbout, setAbout] = useState(false)
-  const [showEducation, setEducation] = useState(false)
-  const [showMisc, setMisc] = useState(false)
+  const [showFirst, setFirst] = useState(false)
+  const [showSecond, setSecond] = useState(false)
+  const [showThird, setThird] = useState(false)
 
-  const toggleAbout = () => {
-    setAbout(!showAbout)
-    setEducation(false);
-    setMisc(false);
+  const firstToggle = () => {
+    setFirst(!showFirst)
+    setSecond(false);
+    setThird(false);
   } 
-  const toggleEducation = () => {
-    setEducation(!showEducation)
-    setAbout(false);
-    setMisc(false);
+  const secondToggle = () => {
+    setSecond(!showSecond)
+    setFirst(false);
+    setThird(false);
   } 
-  const toggleMisc = () => {
-    setMisc(!showMisc)
-    setAbout(false);
-    setEducation(false);
+  const thirdToggle = () => {
+    setThird(!showThird)
+    setFirst(false);
+    setSecond(false);
   }
 
+  /** for creating the tabs
+   * from this video: https://www.youtube.com/watch?v=C2Hgh_GNxQ0
+   */
+  const [active, setActive] = useState(1)
+  function updateToggle(id){
+    setActive(id)
+
+  }
   return (
-    <>
-    <div className="card">
-      <p style={{justifySelf: 'center', fontWeight: '700px'}}>Welcome to my Portfolio!</p>
-      <div className="card-contents">
-          <div className="pic">
-            <img className="profile-pic" alt="pic of me!" src={pic}></img>
-            <p>Hanna Gebrel</p>
-            <ul className="links">
-              <li> <a href="https://www.github.com/hannageb"><img alt="github logo" src={github}></img></a></li>
-              <li> <a href="https://www.linkedin.com/in/hannagebrel"><img alt="linkedin logo" src={linkedin}></img></a></li>
-              <li> <a href="mailto:gebrelhanna112@gmail.com"><img alt="mail icon" src={mail}></img></a></li>
-            </ul>
-          </div>
-          <div className="toggle">
-            <div className="section">
-              <div className="star" onClick={() => toggleAbout()}><p></p></div>
-              <p>about me</p> </div>
-              {showAbout && (
-                <div className="section-text"><p>I am so confused!</p></div>
-              )}
-           
-            <div className="section">
-              <div className="star" onClick={() => toggleEducation()}></div>
-              <p>education & experience</p></div>
-              {showEducation && (
-                <div className="section-text"><p>I am an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction and a minor in Advertising</p></div>
-              )}
+    <div className="card-container">
+      <div className="tab">
+        <button className="tablinks" onClick={()=> updateToggle(1)}>About Me</button>
+        <button className="tablinks" onClick={()=> updateToggle(2)}>Experience & Projects</button>
+      </div>
+      <div id="front-card" className={active === 1 ? "show-content" : "content"}>
+        <p style={{justifySelf: 'center', fontWeight: '700px'}}>Welcome to my Portfolio!</p>
+        <p style={{justifySelf: 'center', fontSize: '17px'}}>Click on the stars to get started</p>
+        <div className="card-contents">
+            <div className="pic">
+              <img className="profile-pic" alt="pic of me!" src={pic}></img>
+              <p>Hanna Gebrel</p>
+              <ul className="links">
+                <li> <a href="https://www.github.com/hannageb"><img alt="github logo" src={github}></img></a></li>
+                <li> <a href="https://www.linkedin.com/in/hannagebrel"><img alt="linkedin logo" src={linkedin}></img></a></li>
+                <li> <a href="mailto:gebrelhanna112@gmail.com"><img alt="mail icon" src={mail}></img></a></li>
+              </ul>
+            </div>
+            <div className="toggle">
+              <div className="section">
+                <div className="star" onClick={() => firstToggle()}><p></p></div>
+                <p>about me</p> </div>
+                {showFirst && (
+                  <div className="section-text"><p>Hi I'm Hanna! I'm an aspiring front-end developer and software engineer who looks to make the internet a better place for everyone </p></div>
+                )}
             
-            <div className="section">
-              <div className="star" onClick={() => toggleMisc()}></div>
-              <p>other interests</p></div>
-              {showMisc && (
-                <div className="section-text"><p>I love Islamic history, Arab film, translated literature, and all other forms of art</p></div>
-              )
-            }
+              <div className="section">
+                <div className="star" onClick={() => secondToggle()}></div>
+                <p>education</p></div>
+                {showSecond && (
+                  <div className="section-text"><p>I am an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction and a minor in Advertising</p></div>
+                )}
+              
+              <div className="section">
+                <div className="star" onClick={() => thirdToggle()}></div>
+                <p>other interests</p></div>
+                {showThird && (
+                  <div className="section-text"><p>I love Islamic history, Arab film, translated literature, and all forms of art</p></div>
+                )
+              }
+              
+            </div>
+        </div>
+      </div>
+      <div id="projects-card" className={active === 2 ? "show-content" : "content"}>
+        <p style={{justifySelf: 'center', fontWeight: '700px'}}>Experience & Projects</p>
+        <div className="toggle">
+              <div className="section">
+                <div className="star" onClick={() => firstToggle()}><p></p></div>
+                <p>portfolio!</p> </div>
+                {showFirst && (
+                  <div className="section-text"><p>Hi I'm Hanna! I'm an aspiring front-end developer and software engineer who wants to make the internet a better place for everyone </p></div>
+                )}
             
-          </div>
-       </div>
+              <div className="section">
+                <div className="star" onClick={() => secondToggle()}></div>
+                <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
+                {showSecond && (
+                  <div className="section-text"><p>I am an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction and a minor in Advertising</p></div>
+                )}
+              
+              <div className="section">
+                <div className="star" onClick={() => thirdToggle()}></div>
+                <p></p></div>
+                {showThird && (
+                  <div className="section-text"><p>I love Islamic history, Arab film, translated literature, and all forms of art</p></div>
+                )
+              }
+        </div>             
+      </div>
     </div>
-    </>
   );
 }
-
 export default App;

@@ -1,73 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 
-    background-image: url('./assets/tulip-pattern.png');
-    background-color: #EFE4F9;
+body {
+  margin: auto;
+  background-image: url('./assets/tulip-pattern.png');
+  background-color: #EFE4F9;
 }
 
-p {
-  padding: 2%;
+p, a {
   font-family: "Jersey 25", sans-serif;
   color: #FFFFFF;
   font-size: 30px;
+  margin: 2%;
 }
 
-.card {
-  display: inline-block;
-  margin: 20px auto;
+.card-container{
+  margin: 0 auto;    
+  display: table;
+}
+
+.tab {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.tab button {
+  background-color: #5D526F;
+  font-family: "Jersey 25", sans-serif;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px 15px 0 0;   
+  padding: 20px;
+}
+
+.tab button:active {
+  background-color: #907cb0;
+}
+.content{
+  display: none;
+}
+
+.show-content{
+  display: block;
+}
+
+#front-card,
+#projects-card {
+  margin: 0 auto;
   width: 775px;
   height: auto;
   padding: 20px;
   background-color: #5D526F;
-  border-radius: 50px;
-  flex-direction: column;
+  border-radius: 0 25px 25px 25px;   
+  position: relative;
 }
 
-.card-contents{
+.card-contents {
   display: flex;
   align-items: flex-start;
   text-align: center;
   width: 100%;
 }
 
-.pic{
+.pic {
   padding-left: 10%;
 }
 
-.profile-pic{
+.profile-pic {
   object-fit: cover;
   width: 200px;
   height: 275px;
   border-radius: 10%;
 }
 
-.pic p, .pic .links{
+.pic p,
+.pic .links {
   line-height: 5px;
   justify-items: start;
 }
 
-.links li{
+.links li {
   list-style: none;
-  
 }
 
-.links{
+.links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  
 }
 
 .links img {
   width: 30px;
 }
 
-.toggle{
+.toggle {
   object-fit: cover;
   width: 100%;
   display: flex;
@@ -81,7 +110,7 @@ p {
   align-items: center;
 }
 
-.section-text{
+.section-text {
   width: 100%;
   text-align: left;
   line-height: 30px;
@@ -90,16 +119,15 @@ p {
 
 /** star is from https://css-shape.com/star/ */
 .star {
-  width: 30px;  
+  width: 30px;
   height: 30px;
   background: #EFE4F9;
   aspect-ratio: 1;
   margin: 5%;
-  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+  clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
   cursor: pointer;
 }
 
-.star:hover{
+.star:hover {
   background: #c2b5ce;
 }
-
