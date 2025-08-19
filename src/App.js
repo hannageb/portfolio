@@ -89,21 +89,21 @@ function App() {
                 <div className="star" onClick={() => firstToggle()}><p></p></div>
                 <p>portfolio!</p> </div>
                 {showFirst && (
-                  <div className="section-text"><p>Hi I'm Hanna! I'm an aspiring front-end developer and software engineer who wants to make the internet a better place for everyone </p></div>
+                  <div className="section-text"><p>Hi I'm Hanna, an aspiring front-end developer and software engineer who wants to make the internet a better place for everyone! </p></div>
                 )}
             
               <div className="section">
                 <div className="star" onClick={() => secondToggle()}></div>
                 <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
                 {showSecond && (
-                  <div className="section-text"><p>I am an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction and a minor in Advertising</p></div>
+                  <div className="section-text"><p>I am currently an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction + an Advertising minor</p></div>
                 )}
               
               <div className="section">
                 <div className="star" onClick={() => thirdToggle()}></div>
                 <p></p></div>
                 {showThird && (
-                  <div className="section-text"><p>I love Islamic history, Arab film, translated literature, and all forms of art</p></div>
+                  <div className="section-text"><p>I love Islamic history, Arab film, translated literature, and all forms of art.</p></div>
                 )
               }
         </div>             

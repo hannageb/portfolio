@@ -64,10 +64,6 @@ p, a {
   width: 100%;
 }
 
-.pic {
-  padding-left: 10%;
-}
-
 .profile-pic {
   object-fit: cover;
   width: 200px;
@@ -75,10 +71,9 @@ p, a {
   border-radius: 10%;
 }
 
-.pic p,
-.pic .links {
+.pic p, .pic .links {
   line-height: 5px;
-  justify-items: start;
+  margin-top: 10%;
 }
 
 .links li {
@@ -90,6 +85,7 @@ p, a {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  padding: 0;
 }
 
 .links img {
