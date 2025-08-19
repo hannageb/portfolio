@@ -4,8 +4,10 @@ import github from './assets/github.png'
 import linkedin from './assets/linkedin.png'
 import mail from './assets/mail.png'
 import { useState } from 'react';
+import { isSoundEnabled, setSoundEnabled, useSound } from 'react-sounds';
 
 function App() {
+  const { play } = useSound('ui/button_hard');
   /** this toggles the text for each section
    * there are three separate states so that each text only shows at one time
    **/
@@ -14,30 +16,43 @@ function App() {
   const [showThird, setThird] = useState(false)
 
   const firstToggle = () => {
+    play()
     setFirst(!showFirst)
     setSecond(false);
     setThird(false);
   } 
   const secondToggle = () => {
+    play()
     setSecond(!showSecond)
     setFirst(false);
     setThird(false);
   } 
   const thirdToggle = () => {
+    play()
     setThird(!showThird)
     setFirst(false);
     setSecond(false);
   }
 
+  
   /** for creating the tabs
    * from this video: https://www.youtube.com/watch?v=C2Hgh_GNxQ0
    */
   const [active, setActive] = useState(1)
+  
   function updateToggle(id){
-    setActive(id)
-
+    setActive(id);
   }
+
+  const enabled = isSoundEnabled();
+  function toggleSound(){
+    setSoundEnabled(!enabled);
+    console.log(`Sound is ${enabled}`);
+  }
+  
   return (
+    <>
+      <button id="sound-btn" onClick={() => toggleSound()}style={{display: 'flex', border: 'none', background: 'none', fontSize: '30px', cursor: "pointer"}}>{enabled ? "🔊" :"🔇"}</button>
     <div className="card-container">
       <div className="tab">
         <button className="tablinks" onClick={()=> updateToggle(1)}>About Me</button>
@@ -89,26 +104,27 @@ function App() {
                 <div className="star" onClick={() => firstToggle()}><p></p></div>
                 <p>portfolio!</p> </div>
                 {showFirst && (
-                  <div className="section-text"><p>Hi I'm Hanna, an aspiring front-end developer and software engineer who wants to make the internet a better place for everyone! </p></div>
+                  <div className="section-text"><p></p></div>
                 )}
             
               <div className="section">
                 <div className="star" onClick={() => secondToggle()}></div>
                 <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
                 {showSecond && (
-                  <div className="section-text"><p>I am currently an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction + an Advertising minor</p></div>
+                  <div className="section-text"><p></p></div>
                 )}
               
               <div className="section">
                 <div className="star" onClick={() => thirdToggle()}></div>
                 <p></p></div>
                 {showThird && (
-                  <div className="section-text"><p>I love Islamic history, Arab film, translated literature, and all forms of art.</p></div>
+                  <div className="section-text"><p></p></div>
                 )
               }
         </div>             
       </div>
     </div>
+    </>
   );
 }
 export default App;
