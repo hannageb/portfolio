@@ -130,6 +130,19 @@ p, a {
   margin: auto 10px;
 }
 
+.inner-section {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.inner-section-text {
+  width: 100%;
+  text-align: left;
+  line-height: 30px;
+  margin-left: 10%;
+}
+
 /** star is from https://css-shape.com/star/ */
 .star {
   width: 30px;

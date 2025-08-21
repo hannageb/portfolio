@@ -14,26 +14,29 @@ function App() {
   const [showFirst, setFirst] = useState(false)
   const [showSecond, setSecond] = useState(false)
   const [showThird, setThird] = useState(false)
+  const [showFourth, setFourth] = useState(false)
+  const [showFifth, setFifth] = useState(false)
 
   const firstToggle = () => {
     play()
     setFirst(!showFirst)
-    setSecond(false);
-    setThird(false);
   } 
   const secondToggle = () => {
     play()
     setSecond(!showSecond)
-    setFirst(false);
-    setThird(false);
   } 
   const thirdToggle = () => {
     play()
     setThird(!showThird)
-    setFirst(false);
-    setSecond(false);
   }
-
+  const fourthToggle = () => {
+    play()
+    setFourth(!showFourth)
+  }
+  const fifthToggle = () =>{
+    play()
+    setFifth(!showFifth)
+  }
   
   /** for creating the tabs
    * from this video: https://www.youtube.com/watch?v=C2Hgh_GNxQ0
@@ -75,7 +78,7 @@ function App() {
           </div>
           <div className="toggle">
               <div className="section">
-                <div className="star" onClick={() => firstToggle()}><p></p></div>
+                <div className="star" onClick={() => firstToggle()}></div>
                 <p>about me</p> </div>
                 {showFirst && (
                   <div className="section-text"><p>Hi I'm Hanna! I'm an aspiring front-end developer and software engineer who looks to make the internet a better place for everyone </p></div>
@@ -104,27 +107,47 @@ function App() {
         <p style={{justifySelf: 'center', fontWeight: '700px'}}>Experience & Projects</p>
         <div className="card-contents">
           <div className="toggle">
-                <div className="section">
-                  <div className="star" onClick={() => firstToggle()}><p></p></div>
-                  <p>portfolio!</p> </div>
-                  {showFirst && (
-                    <div className="section-text"><p></p></div>
-                  )}
-              
-                <div className="section">
-                  <div className="star" onClick={() => secondToggle()}></div>
-                  <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
-                  {showSecond && (
-                    <div className="section-text"><p></p></div>
-                  )}
-                
-                <div className="section">
-                  <div className="star" onClick={() => thirdToggle()}></div>
-                  <p></p></div>
-                  {showThird && (
-                    <div className="section-text"><p></p></div>
-                  )
-                }
+            <div className="section">
+              <div className="star" onClick={() => firstToggle()}></div>
+              <p>projects</p> </div>
+              {showFirst && (
+                  <><div className="inner-section">
+                    <div className="star" onClick={() => secondToggle()}></div>
+                    <a href="https://hannageb.github.io/portfolio/">portfolio</a></div>
+                    {showSecond && (
+                      <><div className="inner-section"></div>
+                        <div className="inner-section-text">
+                          <p>This portfolio was created to showcase my skillset and previous/ongoing projects!</p>
+                          <p>Skills: React, JavaScript, CSS, Figma</p>
+                        </div></>
+                      )}
+                    <div className="inner-section">
+                    <div className="star" onClick={() => thirdToggle()}></div>
+                      <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
+                      {showThird && (
+                        <div className="inner-section-text">
+                          <p>Created for an Intro to SWE course, this career helper takes users' answers from a basic or detailed questionaire and generates possible career options through OpenAI's API</p>
+                          <p>Skills: React, TypeScript, OpenAI, Agile, Wireframing, UX</p>
+                        </div>
+                      )}
+                    <div className="inner-section">
+                    <div className="star" onClick={() => fourthToggle()}></div>
+                    <a href="https://hannageb.github.io/mia-egypt/">redesigning the MIA website</a></div>
+                      {showFourth && (
+                        <div className="inner-section-text">
+                          <p>Redesigning the website for the Museum of Islamic Art in Cairo, Egypt</p>
+                          <p>Skills: React, TypeScript, Figma</p>
+                        </div>
+                      )}
+                    </>
+                )}
+              <div className="section">
+              <div className="star" onClick={() => fifthToggle()}></div>
+              <p>extracurriculars</p></div>
+              {showFifth && (
+                  <div className="section-text"><p>I have been on the executive board of 5 organizations at UDel: Muslim Student Association (MSA), Middle Eastern Student Association (MESA), Egyptian Cultural Club (ECC), FALASTIN, and ACM-W.</p>
+                  <p> At these organizations, I have run the Social Media pages, taken notes for meethings, created infographics & a newsletter, as well as taken care of finances. </p></div>
+              )}
           </div>    
           </div>         
       </div>
