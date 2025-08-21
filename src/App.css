@@ -6,6 +6,7 @@ body {
   background-color: #EFE4F9;
 }
 
+/* global text styling */
 p, a {
   font-family: "Jersey 25", sans-serif;
   color: #FFFFFF;
@@ -13,22 +14,23 @@ p, a {
   margin: 2%;
 }
 
+/* card-container has the tabs AND card */
 .card-container{
   margin: 0 auto;    
   display: table;
   width: 90%;
 }
 
-.tab {
+.tabs {
   display: flex;
   position: relative;
   margin: 0 auto;
-  margin-top: 40px;
 }
 
-.tab button {
+.tabs button {
   background-color: #5D526F;
   font-family: "Jersey 25", sans-serif;
+  font-size: 20px;
   color: #FFFFFF;
   border: none;
   cursor: pointer;
@@ -36,9 +38,13 @@ p, a {
   padding: 20px;
 }
 
-.tab button:active {
+.tabs button:active {
   background-color: #907cb0;
 }
+
+/* content/show-content are the card itself */
+
+/* content class is for the unactive tab hence display=none*/
 .content{
   display: none;
 }
@@ -56,13 +62,26 @@ p, a {
   position: relative;
 }
 
-.card-contents {
-  display: flex;
-  align-items: flex-start;
-  text-align: center;
+.top-text{
   width: 100%;
+  text-align: center;
+  padding: 2%;
 }
 
+/* card-contents has the img+links div as well as the toggles*/
+.card-contents{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+/* pic contains the img, and github, linkedin, & email links*/
+.pic {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* dimensions for the img */
 .profile-pic {
   object-fit: cover;
   width: 200px;
@@ -70,9 +89,11 @@ p, a {
   border-radius: 10%;
 }
 
-.pic p, .pic .links {
+.name, .pic .links {
   line-height: 5px;
   margin-top: 10%;
+  text-align: center;
+  justify-self: center;  
 }
 
 .links li {
@@ -80,9 +101,7 @@ p, a {
 }
 
 .links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* keeps them inline*/
   gap: 15px;
   padding: 0;
 }
@@ -92,14 +111,13 @@ p, a {
 }
 
 .toggle {
+  grid-column: span 3;
   object-fit: cover;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .section {
-  padding-right: 10%;
   margin-top: 10px;
   display: flex;
   align-items: center;

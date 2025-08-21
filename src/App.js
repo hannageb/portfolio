@@ -52,26 +52,28 @@ function App() {
   
   return (
     <>
-      <button id="sound-btn" onClick={() => toggleSound()}style={{display: 'flex', border: 'none', background: 'none', fontSize: '30px', cursor: "pointer"}}>{enabled ? "🔊" :"🔇"}</button>
+    <button id="sound-btn" onClick={() => toggleSound()}style={{display: 'flex', border: 'none', background: 'none', fontSize: '30px', cursor: "pointer"}}>{enabled ? "🔊" :"🔇"}</button>
     <div className="card-container">
-      <div className="tab">
+      <div className="tabs">
         <button className="tablinks" onClick={()=> updateToggle(1)}>About Me</button>
         <button className="tablinks" onClick={()=> updateToggle(2)}>Experience & Projects</button>
       </div>
       <div id="front-card" className={active === 1 ? "show-content" : "content"}>
-        <p style={{justifySelf: 'center', fontWeight: '700px'}}>Welcome to my Portfolio!</p>
-        <p style={{justifySelf: 'center', fontSize: '17px'}}>Click on the stars to get started</p>
+        <div className="top-text">
+          <p style={{fontWeight: '700px'}}>Welcome to my Portfolio!</p>
+          <p style={{fontSize: '20px'}}>Click on the stars to get started</p>
+        </div>
         <div className="card-contents">
-            <div className="pic">
-              <img className="profile-pic" alt="pic of me!" src={pic}></img>
-              <p>Hanna Gebrel</p>
-              <ul className="links">
-                <li> <a href="https://www.github.com/hannageb"><img alt="github logo" src={github}></img></a></li>
-                <li> <a href="https://www.linkedin.com/in/hannagebrel"><img alt="linkedin logo" src={linkedin}></img></a></li>
-                <li> <a href="mailto:gebrelhanna112@gmail.com"><img alt="mail icon" src={mail}></img></a></li>
-              </ul>
-            </div>
-            <div className="toggle">
+          <div className="pic">
+            <img className="profile-pic" alt="pic of me!" src={pic}></img>
+            <p className="name">Hanna Gebrel</p>
+            <ul className="links">
+              <li> <a href="https://www.github.com/hannageb"><img alt="github logo" src={github}></img></a></li>
+              <li> <a href="https://www.linkedin.com/in/hannagebrel"><img alt="linkedin logo" src={linkedin}></img></a></li>
+              <li> <a href="mailto:gebrelhanna112@gmail.com"><img alt="mail icon" src={mail}></img></a></li>
+            </ul>
+          </div>
+          <div className="toggle">
               <div className="section">
                 <div className="star" onClick={() => firstToggle()}><p></p></div>
                 <p>about me</p> </div>
@@ -94,36 +96,39 @@ function App() {
                 )
               }
               
-            </div>
+          </div>
         </div>
-      </div>
+        </div>
+      
       <div id="projects-card" className={active === 2 ? "show-content" : "content"}>
         <p style={{justifySelf: 'center', fontWeight: '700px'}}>Experience & Projects</p>
-        <div className="toggle">
-              <div className="section">
-                <div className="star" onClick={() => firstToggle()}><p></p></div>
-                <p>portfolio!</p> </div>
-                {showFirst && (
-                  <div className="section-text"><p></p></div>
-                )}
-            
-              <div className="section">
-                <div className="star" onClick={() => secondToggle()}></div>
-                <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
-                {showSecond && (
-                  <div className="section-text"><p></p></div>
-                )}
+        <div className="card-contents">
+          <div className="toggle">
+                <div className="section">
+                  <div className="star" onClick={() => firstToggle()}><p></p></div>
+                  <p>portfolio!</p> </div>
+                  {showFirst && (
+                    <div className="section-text"><p></p></div>
+                  )}
               
-              <div className="section">
-                <div className="star" onClick={() => thirdToggle()}></div>
-                <p></p></div>
-                {showThird && (
-                  <div className="section-text"><p></p></div>
-                )
-              }
-        </div>             
+                <div className="section">
+                  <div className="star" onClick={() => secondToggle()}></div>
+                  <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
+                  {showSecond && (
+                    <div className="section-text"><p></p></div>
+                  )}
+                
+                <div className="section">
+                  <div className="star" onClick={() => thirdToggle()}></div>
+                  <p></p></div>
+                  {showThird && (
+                    <div className="section-text"><p></p></div>
+                  )
+                }
+          </div>    
+          </div>         
       </div>
-    </div>
+      </div>
     </>
   );
 }
