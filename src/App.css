@@ -38,6 +38,10 @@ p, a {
   padding: 20px;
 }
 
+.tabs button:hover {
+  background-color: #907cb0;
+}
+
 .tabs button:active {
   background-color: #907cb0;
 }

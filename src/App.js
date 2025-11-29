@@ -16,6 +16,7 @@ function App() {
   const [showThird, setThird] = useState(false)
   const [showFourth, setFourth] = useState(false)
   const [showFifth, setFifth] = useState(false)
+  const [showSixth, setSixth] = useState(false)
 
   const firstToggle = () => {
     play()
@@ -36,6 +37,11 @@ function App() {
   const fifthToggle = () =>{
     play()
     setFifth(!showFifth)
+  }
+
+  const sixthToggle = () =>{
+    play()
+    setSixth(!showSixth)
   }
   
   /** for creating the tabs
@@ -88,7 +94,7 @@ function App() {
                 <div className="star" onClick={() => secondToggle()}></div>
                 <p>education</p></div>
                 {showSecond && (
-                  <div className="section-text"><p>I am an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction and a minor in Advertising</p></div>
+                  <div className="section-text"><p>I am an honors student at the University of Delaware studying Computer Science with a concentration in Human-Computer Interaction and minors in Advertising and Interactive Media</p></div>
                 )}
               
               <div className="section">
@@ -107,6 +113,23 @@ function App() {
         <p style={{justifySelf: 'center', fontWeight: '700px'}}>Experience & Projects</p>
         <div className="card-contents">
           <div className="toggle">
+            <div className="section">
+              <div className="star" onClick={() => sixthToggle()}></div>
+              <p>experience</p></div>
+              {showSixth && (
+                <><div className="inner-section">
+                    <div className="star" onClick={() => secondToggle()}></div>
+                     <p>Vocal Goals</p></div>
+                    {showSecond && (
+                      <div className="inner-section">
+                        <div className="inner-section-text"
+                        ><p>A mobile app helping people achieve gender-affirming vocal goals</p>
+                        <p>Skills: React, TypeScript, Figma, User Research Methods</p>
+                        </div>
+                      </div>
+                      )}
+                  </>
+              )}
             <div className="section">
               <div className="star" onClick={() => firstToggle()}></div>
               <p>projects</p> </div>
@@ -148,10 +171,10 @@ function App() {
                   <div className="section-text"><p>I have been on the executive board of 5 organizations at UDel: Muslim Student Association (MSA), Middle Eastern Student Association (MESA), Egyptian Cultural Club (ECC), FALASTIN, and ACM-W.</p>
                   <p> At these organizations, I have run the Social Media pages, taken notes for meethings, created infographics & a newsletter, as well as taken care of finances. </p></div>
               )}
-          </div>    
-          </div>         
-      </div>
-      </div>
+          </div>  
+          </div>  
+          </div>   
+        </div>     
     </>
   );
 }
