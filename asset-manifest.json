@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e46dec2f.css",
-    "main.js": "/portfolio/static/js/main.3669a73a.js",
+    "main.css": "/portfolio/static/css/main.2cc28ae1.css",
+    "main.js": "/portfolio/static/js/main.dd384c54.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
+    "static/media/calendar.gif": "/portfolio/static/media/calendar.771cd59850caf29b68b1.gif",
     "static/media/pic.jpg": "/portfolio/static/media/pic.e543679242890fd4f9c9.jpg",
+    "static/media/mesa-posts.png": "/portfolio/static/media/mesa-posts.93e9351ec7b769a52d09.png",
     "static/media/tulip-pattern.png": "/portfolio/static/media/tulip-pattern.9d1de4cc7d1235d3decc.png",
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.4d89447feb12417a1b34.png",
     "static/media/github.png": "/portfolio/static/media/github.2ceeb4d1e7f9c958adb5.png",
     "index.html": "/portfolio/index.html",
-    "main.e46dec2f.css.map": "/portfolio/static/css/main.e46dec2f.css.map",
-    "main.3669a73a.js.map": "/portfolio/static/js/main.3669a73a.js.map",
+    "main.2cc28ae1.css.map": "/portfolio/static/css/main.2cc28ae1.css.map",
+    "main.dd384c54.js.map": "/portfolio/static/js/main.dd384c54.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e46dec2f.css",
-    "static/js/main.3669a73a.js"
+    "static/css/main.2cc28ae1.css",
+    "static/js/main.dd384c54.js"
   ]
 }
