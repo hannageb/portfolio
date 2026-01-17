@@ -3,6 +3,8 @@ import pic from './assets/pic.jpg'
 import github from './assets/github.png'
 import linkedin from './assets/linkedin.png'
 import mail from './assets/mail.png'
+import calendar from './assets/calendar.gif'
+import mesa from './assets/mesa-posts.png'
 import { useState } from 'react';
 import { isSoundEnabled, setSoundEnabled, useSound } from 'react-sounds';
 
@@ -66,6 +68,7 @@ function App() {
       <div className="tabs">
         <button className="tablinks" onClick={()=> updateToggle(1)}>About Me</button>
         <button className="tablinks" onClick={()=> updateToggle(2)}>Experience & Projects</button>
+         <button className="tablinks" onClick={()=> updateToggle(3)}>Graphic Design</button>
       </div>
       <div id="front-card" className={active === 1 ? "show-content" : "content"}>
         <div className="top-text">
@@ -174,6 +177,14 @@ function App() {
           </div>  
           </div>  
           </div>   
+        
+        <div id="design-card" className={active === 3 ? "show-content" : "content"}>
+          <p style={{justifySelf: 'center', fontWeight: '700px'}}>graphic design</p>
+          <div className="card-contents">
+             <img src={calendar} alt="cairo calendar" className="calendar" style={{width:'335px', height:'450px'}}></img>
+             <img src={mesa} alt="mesa posts" className="insta" style={{width: '450px', height:'450px'}}></img>
+          </div>  
+        </div>   
         </div>     
     </>
   );
