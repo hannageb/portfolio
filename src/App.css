@@ -41,11 +41,9 @@ p, a {
 .tabs button:hover {
   background-color: #907cb0;
 }
-
-.tabs button:active {
+.tabs button.active-tab {
   background-color: #907cb0;
 }
-
 /* content/show-content are the card itself */
 
 /* content class is for the unactive tab hence display=none*/
@@ -69,7 +67,7 @@ p, a {
 .top-text{
   width: 100%;
   text-align: center;
-  padding: 2%;
+  padding: 1%;
 }
 
 /* card-contents has the img+links div as well as the toggles*/
@@ -115,24 +113,15 @@ p, a {
   width: 30px;
 }
 
-.toggle {
+.text {
   grid-column: span 3;
   object-fit: cover;
   display: flex;
   flex-direction: column;
-}
-
-.section {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.section-text {
   width: 100%;
   text-align: left;
-  line-height: 30px;
-  margin: auto 10px;
+  line-height: 25px;
+  margin: auto 5px;
 }
 
 .inner-section {
