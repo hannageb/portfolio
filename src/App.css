@@ -71,11 +71,8 @@ p, a {
 }
 
 /* card-contents has the img+links div as well as the toggles*/
-.card-contents{
+#front-card .card-contents{
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
 }
 /* pic contains the img, and github, linkedin, & email links*/
 .pic {
