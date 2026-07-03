@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2cc28ae1.css",
-    "main.js": "/portfolio/static/js/main.dd384c54.js",
+    "main.css": "/portfolio/static/css/main.3230f76e.css",
+    "main.js": "/portfolio/static/js/main.e6e8b31c.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
     "static/media/calendar.gif": "/portfolio/static/media/calendar.771cd59850caf29b68b1.gif",
     "static/media/pic.jpg": "/portfolio/static/media/pic.e543679242890fd4f9c9.jpg",
-    "static/media/mesa-posts.png": "/portfolio/static/media/mesa-posts.93e9351ec7b769a52d09.png",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.c0b61973d1c2c99215c2.pdf",
     "static/media/tulip-pattern.png": "/portfolio/static/media/tulip-pattern.9d1de4cc7d1235d3decc.png",
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.4d89447feb12417a1b34.png",
     "static/media/github.png": "/portfolio/static/media/github.2ceeb4d1e7f9c958adb5.png",
     "index.html": "/portfolio/index.html",
-    "main.2cc28ae1.css.map": "/portfolio/static/css/main.2cc28ae1.css.map",
-    "main.dd384c54.js.map": "/portfolio/static/js/main.dd384c54.js.map",
+    "static/media/download.svg": "/portfolio/static/media/download.7c7fa668fa221e7fe8840ecbd089b9b0.svg",
+    "main.3230f76e.css.map": "/portfolio/static/css/main.3230f76e.css.map",
+    "main.e6e8b31c.js.map": "/portfolio/static/js/main.e6e8b31c.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cc28ae1.css",
-    "static/js/main.dd384c54.js"
+    "static/css/main.3230f76e.css",
+    "static/js/main.e6e8b31c.js"
   ]
 }
