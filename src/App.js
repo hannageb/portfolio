@@ -56,20 +56,20 @@ function App() {
             <p style={{ justifySelf: 'center', textDecoration: 'underline'}}>WEB DEVELOPMENT</p>
             <div className="card-contents">
               <><div className="inner-section">
-                    <a href="https://hannageb.github.io/portfolio/">portfolio</a></div>
+                    <a href="https://hannageb.github.io/portfolio/" style={{color: '#ceaafb'}}>portfolio</a></div>
                       <><div className="inner-section"></div>
                         <div className="inner-section-text">
                           <p>This portfolio was created to showcase my skillset and previous/ongoing projects!</p>
                           <p>Skills: React, JavaScript, CSS, Figma</p>
                         </div></>
                     <div className="inner-section">
-                      <a href="https://hannageb.github.io/starterhelpi/">career helpi</a></div>
+                      <a href="https://hannageb.github.io/starterhelpi/" style={{color: '#ceaafb'}}>career helpi</a></div>
                         <div className="inner-section-text">
                           <p>Created for an Intro to SWE course, this career helper takes users' answers from a basic or detailed questionaire and generates possible career options through OpenAI's API</p>
                           <p>Skills: React, TypeScript, OpenAI, Agile, Wireframing, UX</p>
                         </div>
                     <div className="inner-section">
-                    <a href="https://hannageb.github.io/mia-egypt/">redesigning the MIA website</a></div>
+                    <a href="https://hannageb.github.io/mia-egypt/" style={{color: '#ceaafb'}}>redesigning the MIA website</a></div>
                         <div className="inner-section-text">
                           <p>Redesigning the website for the Museum of Islamic Art in Cairo, Egypt</p>
                           <p>Skills: React, TypeScript, Figma</p>

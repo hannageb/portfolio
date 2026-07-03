@@ -128,8 +128,9 @@ p, a {
 }
 
 .inner-section-text {
-  width: 100%;
+  width: 90%;
   text-align: left;
   line-height: 30px;
   margin-left: 10%;
+  margin-right: 10%;
 }
