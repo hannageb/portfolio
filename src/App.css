@@ -11,7 +11,7 @@ p, a {
   font-family: "Jersey 25", sans-serif;
   color: #FFFFFF;
   font-size: 30px;
-  margin: 2%;
+  margin: 1%;
 }
 
 /* card-container has the tabs AND card */
@@ -39,13 +39,11 @@ p, a {
 }
 
 .tabs button:hover {
+  background-color: #6f5f88;
+}
+.tabs button.active-tab {
   background-color: #907cb0;
 }
-
-.tabs button:active {
-  background-color: #907cb0;
-}
-
 /* content/show-content are the card itself */
 
 /* content class is for the unactive tab hence display=none*/
@@ -58,7 +56,7 @@ p, a {
 }
 
 #front-card,
-#projects-card, #design-card {
+#design-card, #web-development-card {
   margin: 0 auto;
   padding: 20px;
   background-color: #5D526F;
@@ -69,15 +67,12 @@ p, a {
 .top-text{
   width: 100%;
   text-align: center;
-  padding: 2%;
+  padding: 1%;
 }
 
 /* card-contents has the img+links div as well as the toggles*/
-.card-contents{
+#front-card .card-contents{
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
 }
 /* pic contains the img, and github, linkedin, & email links*/
 .pic {
@@ -115,24 +110,15 @@ p, a {
   width: 30px;
 }
 
-.toggle {
+.text {
   grid-column: span 3;
   object-fit: cover;
   display: flex;
   flex-direction: column;
-}
-
-.section {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.section-text {
   width: 100%;
   text-align: left;
-  line-height: 30px;
-  margin: auto 10px;
+  line-height: 25px;
+  margin: auto 5px;
 }
 
 .inner-section {
@@ -146,31 +132,4 @@ p, a {
   text-align: left;
   line-height: 30px;
   margin-left: 10%;
-}
-
-/** star is from https://css-shape.com/star/ */
-.star {
-  width: 30px;
-  height: 30px;
-  background: #EFE4F9;
-  aspect-ratio: 1;
-  margin: 5%;
-  clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
-  cursor: pointer;
-}
-
-.star:hover {
-  background: #c2b5ce;
-  animation: tilt-n-move-shaking  0.35s infinite;
-}
-
-@keyframes tilt-n-move-shaking {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(3px, 3px) rotate(3deg); }
-  50% { transform: translate(0, 0) rotate(0deg); }
-  75% { transform: translate(-3px, 3px) rotate(-3deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
-}
-.calendar, .instagram{
-  
 }

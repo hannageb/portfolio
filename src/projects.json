@@ -1,0 +1,27 @@
+{
+"data": [
+    {
+        "title": "Portfolio",
+        "description": "This portfolio was created to showcase my skillset and previous/ongoing projects!",
+        "skills": ["React", "JavaScript", "CSS", "HTML"],
+        "image": ""
+    }, 
+    {
+        "title": "Vocal Goals",
+        "description": "A mobile app helping people achieve gender-affirming vocal goals.",
+        "skills": ["React", "JavaScript", "Figma"],
+        "image": ""
+    },
+    {
+        "title": "Museum of Islamic Art Redesign",
+        "description": "Redesigning the website for the Museum of Islamic Art in Cairo, Egypt",
+        "skills": ["React", "TypeScript", "Figma"],
+        "image": ""
+    },
+    {
+        "title": "CareerHelpi",
+        "description": "Created for an Intro to SWE course, this career helper takes users' answers from a basic or detailed questionaire and generates possible career options through OpenAI's API",
+        "skills": ["React", "TypeScript","OpenAI API", "Wireframing", "Agile Methodology"]
+    }
+]
+}
