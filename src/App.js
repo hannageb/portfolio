@@ -21,17 +21,17 @@ function App() {
       <div className="tabs">
         <button className={active === 1 ? "active-tab" : ""} onClick={() => setActive(1)}>About Me</button>
         <button className={active === 2 ? "active-tab" : ""} onClick={() => setActive(2)}>Social Media</button>
-        <button className={active === 4 ? "active-tab" : ""} onClick={() => setActive(3)}>Web Design</button>
+        <button className={active === 3 ? "active-tab" : ""} onClick={() => setActive(3)}>Web Design</button>
       </div>
       <div id="front-card" className={active === 1 ? "show-content" : "content"}>
         <div className="top-text">
-          <p style={{fontWeight: '700px'}}>Welcome to my Portfolio</p>
+          <p style={{fontWeight: '700px'}}>Welcome to my Portfolio ☺︎</p>
         </div>
         <div className="card-contents">
           <div className="text">
                 <p style={{textDecoration:'underline'}}>ABOUT ME</p>
                 <p>Hi I'm Hanna!<br/>I'm a Senior Computer Science student at the University of Delaware with a concentration in Human-Computer Interaction and minoring in Advertising and Interactive Media.</p>
-                <p>I love history, film, translated literature, and all forms of art, especially international. Something about me is I will always have recommendations lined up: restaurants, movies, books, you name it.</p>
+                <p>I love history, film, literature, and all forms of art, but especially when get to learn about different cultures.</p>
           </div>
           <div className="pic">
             <img className="profile-pic" alt="pic of me!" src={pic}></img>
@@ -39,6 +39,7 @@ function App() {
         </div>
         <div className="top-text">
           <p style={{fontWeight: '700px'}}>Let's Keep in Touch!</p>
+          <p style={{fontSize: '20px'}}>Feel free to reach out if you have any questions, share film/book recommendations or just want to connect!</p>
             <ul className="links" style={{justifyContent: 'center'}}>
                 <li> <a href="https://www.github.com/hannageb"><img alt="github logo" src={github}></img></a></li>
                 <li> <a href="https://www.linkedin.com/in/hannagebrel"><img alt="linkedin logo" src={linkedin}></img></a></li>
@@ -46,7 +47,7 @@ function App() {
               </ul>
         </div>
       </div> 
-     <div id="projects-card" className={active === 2 ? "show-content" : "content"}>
+     <div id="design-card" className={active === 2 ? "show-content" : "content"}>
         <p style={{justifySelf: 'center', fontWeight: '700px'}}>DESIGN</p>
         <div className="card-contents">
           <div className="toggle">
@@ -83,16 +84,16 @@ function App() {
           </div>
           </div>
         </div>
-      </div>
-      <div id="graphic-design-card" className={active === 3 ? "show-content" : "content"}>
-            <p style={{ justifySelf: 'center', fontWeight: '700', textDecoration: 'underline'}}>WEB DESIGN</p>
+        <div id="web-development-card" className={active === 3 ? "show-content" : "content"}>
+            <p style={{ justifySelf: 'center', fontWeight: '700', textDecoration: 'underline'}}>WEB DEVELOPMENT</p>
             <div className="card-contents">
                 <ul className="cards">
                     <li><img src={calendar} alt="cairo calendar" style={{ width: '335px', height: '450px' }} /></li>
                     <li><img src={mesa} alt="mesa posts" style={{ width: '450px', height: '450px' }} /></li>
                 </ul>
             </div>
-        </div>
+      </div>
+      </div>
     </>
 
   );

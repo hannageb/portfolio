@@ -11,7 +11,7 @@ p, a {
   font-family: "Jersey 25", sans-serif;
   color: #FFFFFF;
   font-size: 30px;
-  margin: 2%;
+  margin: 1%;
 }
 
 /* card-container has the tabs AND card */
@@ -39,7 +39,7 @@ p, a {
 }
 
 .tabs button:hover {
-  background-color: #907cb0;
+  background-color: #6f5f88;
 }
 .tabs button.active-tab {
   background-color: #907cb0;
@@ -56,7 +56,7 @@ p, a {
 }
 
 #front-card,
-#projects-card, #design-card {
+#design-card, #web-development-card {
   margin: 0 auto;
   padding: 20px;
   background-color: #5D526F;
@@ -135,19 +135,4 @@ p, a {
   text-align: left;
   line-height: 30px;
   margin-left: 10%;
-}
-
-/** star is from https://css-shape.com/star/ */
-.star {
-  width: 30px;
-  height: 30px;
-  background: #EFE4F9;
-  aspect-ratio: 1;
-  margin: 5%;
-  clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
-  cursor: pointer;
-}
-
-.star:hover {
-  background: #c2b5ce;
 }
