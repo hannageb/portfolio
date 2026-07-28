@@ -87,6 +87,19 @@ p, a {
   width: 200px;
   height: 275px;
   border-radius: 10%;
+  margin-right: 20px;
+}
+
+.card-contents {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  div.card-contents {
+    flex-direction: column;
+  }
 }
 
 .name, .pic .links {
