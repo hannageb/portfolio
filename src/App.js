@@ -53,7 +53,7 @@ function App() {
         {/* WEB DEV CARD **/}
         <div id="web-development-card" className={active === 2 ? "show-content" : "content"}>
             <p style={{ justifySelf: 'center', textDecoration: 'underline'}}>WEB DEVELOPMENT</p>
-            <div className="card-contents">
+            <div className="webdev-contents">
               <><div className="inner-section">
                     <a href="https://hannageb.github.io/portfolio/" style={{color: '#ceaafb'}}>portfolio</a></div>
                       <><div className="inner-section"></div>
