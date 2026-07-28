@@ -7,7 +7,6 @@ import { useState } from 'react';
 import calendar from './assets/calendar.gif';
 import download from './assets/download.svg'
 import resume from './assets/resume.pdf'
-import { resumeToPipeableStream } from 'react-dom/server';
 
 function App() {
   /** for creating the tabs
@@ -27,7 +26,7 @@ function App() {
       </div>
       {/* FIRST CARD **/}
       <div id="front-card" className={active === 1 ? "show-content" : "content"}>
-        <div className="top-text">
+        <div className="top-text" id="typewriter">
           <p>Welcome to my Portfolio ☺︎</p>
         </div>
         <div className="card-contents">
