@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3e8f0297.css",
-    "main.js": "/portfolio/static/js/main.1f647698.js",
+    "main.css": "/portfolio/static/css/main.4a7a1113.css",
+    "main.js": "/portfolio/static/js/main.4529c750.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
+    "static/media/global-latina-belt.jpg": "/portfolio/static/media/global-latina-belt.8dff90ce6b97b4982825.jpg",
+    "static/media/egy-v-nz.png": "/portfolio/static/media/egy-v-nz.0ed287d5978055f77a33.png",
     "static/media/calendar.gif": "/portfolio/static/media/calendar.771cd59850caf29b68b1.gif",
     "static/media/pic.jpg": "/portfolio/static/media/pic.e543679242890fd4f9c9.jpg",
     "static/media/resume.pdf": "/portfolio/static/media/resume.c0b61973d1c2c99215c2.pdf",
@@ -11,12 +13,12 @@
     "static/media/github.png": "/portfolio/static/media/github.2ceeb4d1e7f9c958adb5.png",
     "index.html": "/portfolio/index.html",
     "static/media/download.svg": "/portfolio/static/media/download.7c7fa668fa221e7fe8840ecbd089b9b0.svg",
-    "main.3e8f0297.css.map": "/portfolio/static/css/main.3e8f0297.css.map",
-    "main.1f647698.js.map": "/portfolio/static/js/main.1f647698.js.map",
+    "main.4a7a1113.css.map": "/portfolio/static/css/main.4a7a1113.css.map",
+    "main.4529c750.js.map": "/portfolio/static/js/main.4529c750.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e8f0297.css",
-    "static/js/main.1f647698.js"
+    "static/css/main.4a7a1113.css",
+    "static/js/main.4529c750.js"
   ]
 }
