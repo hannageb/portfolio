@@ -1,0 +1,18 @@
+.card-contents{
+  display: flex;
+}
+/* pic contains the img, and github, linkedin, & email links*/
+.pic {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* dimensions for the img */
+.profile-pic {
+  object-fit: cover;
+  width: 200px;
+  height: 275px;
+  border-radius: 10%;
+  margin-right: 20px;
+}

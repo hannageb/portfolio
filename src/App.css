@@ -44,16 +44,6 @@ p, a {
 .tabs button.active-tab {
   background-color: #907cb0;
 }
-/* content/show-content are the card itself */
-
-/* content class is for the unactive tab hence display=none*/
-.content{
-  display: none;
-}
-
-.show-content{
-  display: block;
-}
 
 #front-card,
 #design-card, #web-development-card {
@@ -91,26 +81,6 @@ p, a {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(255, 255, 255); }
-}
-
-/* card-contents has the img+links div as well as the toggles*/
-#front-card .card-contents{
-  display: flex;
-}
-/* pic contains the img, and github, linkedin, & email links*/
-.pic {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-
-/* dimensions for the img */
-.profile-pic {
-  object-fit: cover;
-  width: 200px;
-  height: 275px;
-  border-radius: 10%;
-  margin-right: 20px;
 }
 
 .card-contents {
