@@ -1,6 +1,7 @@
 import calendar from '../assets/calendar.gif';
 import egy from '../assets/egy-v-nz.png';
 import worldwide from '../assets/global-latina-belt.jpg';
+import salah from '../assets/salah-top-scorer.jpg';
 import Carousel from 'react-bootstrap/Carousel';
 import './Design.css';
 
@@ -27,6 +28,13 @@ function Design() {
                 <img className="d-block mx-auto"src={worldwide} alt="worldwide-latin-belt" style={{ width: '335px', height: '450px' }} />
                 <div className="carousel-caption">
                     <p>An event flyer inspired by a tweet describing the "worldwide latina belt"</p>
+                    <p>Tools: Affinity</p>
+                </div>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block mx-auto"src={salah} alt="salah" style={{ width: '335px', height: '450px' }} />
+                <div className="carousel-caption">
+                    <p>A poster celebrating Mohamed Salah becoming Egypt's top scorer</p>
                     <p>Tools: Affinity</p>
                 </div>
             </Carousel.Item>
