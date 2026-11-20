@@ -7,7 +7,7 @@ body {
 }
 
 /* global text styling */
-p, a {
+p, a, h1, h2, ul, li {
   font-family: "Jersey 25", sans-serif;
   color: #FFFFFF;
   font-size: 30px;
