@@ -48,8 +48,6 @@ function WebDevelopment() {
               </ul>
               <h2>Solution</h2>
               <p>An interactive questionnaire that sends a user's answers to GPT and returns tailored career suggestions with detailed information and resources.</p>
-              <h2>Reflection</h2>
-              <p></p>
             </div>
           </Carousel.Item>
           <Carousel.Item>
